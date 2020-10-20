@@ -38,7 +38,7 @@ type stability in the program, without needing runtime code generation.
 ### Stage 2 -- Python 3.11
 
 This stage will make many improvements to the runtime and key objects.
-Stage two will be characterized by lots "tweaks", rather than any "headline" improvement.
+Stage two will be characterized by lots of "tweaks", rather than any "headline" improvement.
 The planned improvements include:
 
 * Improved performance for integers of less than one machine word.
