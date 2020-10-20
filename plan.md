@@ -85,9 +85,9 @@ That is not to say that iterating over homegenous lists cannot be faster than fo
 There is no guarantee that optimized code will be run, nor that code falls neatly into "hot" and "cold" categories. In order to prevent sharp edges in performance, the promotion of code from one tier to the next must be fast. 
 
 Fast compilation is not without cost. The quality of the generated code may be degraded.
-Performance may be worse on loop-heavy and numerical code, than for a heivyweight optimizer, but performance of application code should be more robust.
+Performance may be worse on loop-heavy and numerical code, than for a heavyweight optimizer, but performance of application code should be more robust.
 
 ## High performance debugging and profiling
 
-Currently debugging and profiling in Python are supporting by providing a general purpose tracing interface, `sys.settrace`. However, this very slow. 
-To avoid the complexity of trying to suport this general purpose tracing in a high performance interpreter, we plan to provide to an API for inserting debugging and profiling points into the bytecode at runtime. This can be incorporated into the "quickening" phase of the tier 1 interpreter, allowing debugging code at near full speed, and profiling at speeds comparable to CPython 3.9 without profiling.
+Currently debugging and profiling in Python are supporting by providing a general purpose tracing interface, `sys.settrace`. However, this is very slow. 
+To avoid the complexity of trying to support this general purpose tracing in a high performance interpreter, we plan to provide to an API for inserting debugging and profiling points into the bytecode at runtime. This can be incorporated into the "quickening" phase of the tier 1 interpreter, allowing debugging code at near full speed, and profiling at speeds comparable to CPython 3.9 without profiling.
