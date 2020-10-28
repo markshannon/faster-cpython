@@ -90,4 +90,4 @@ Performance may be worse on loop-heavy and numerical code, than for a heavyweigh
 ## High performance debugging and profiling
 
 Currently debugging and profiling in Python are supporting by providing a general purpose tracing interface, `sys.settrace`. However, this is very slow. 
-To avoid the complexity of trying to support this general purpose tracing in a high performance interpreter, we plan to provide to an API for inserting debugging and profiling points into the bytecode at runtime. This can be incorporated into the "quickening" phase of the tier 1 interpreter, allowing debugging code at near full speed, and profiling at speeds comparable to CPython 3.9.
+To avoid the complexity of trying to support this general purpose tracing in a high performance interpreter, we plan to provide an API for inserting debugging and profiling points into the bytecode at runtime. This can be incorporated into the "quickening" phase of the tier 1 interpreter, allowing debugging code at near full speed, and profiling at speeds comparable to CPython 3.9.
