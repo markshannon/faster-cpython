@@ -42,7 +42,7 @@ Stage two will be characterized by lots of "tweaks", rather than any "headline" 
 The planned improvements include:
 
 * Improved performance for integers of less than one machine word.
-* Improved peformance for binary operators.
+* Improved performance for binary operators.
 * Faster calls and returns, through better handling of frames.
 * Better object memory layout and reduced memory management overhead.
 * Zero overhead exception handling.
